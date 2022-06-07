@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ${DOCKER_ENV}
+    container_name: ${DOCKER_ENV}
+    restart: unless-stopped
+    networks:
+      - app-network
+networks:
+  app-network:

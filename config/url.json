@@ -1,0 +1,7 @@
+{
+    "development": {
+        "services": [
+            { "name": "external", "url": "https://hacker-news.firebaseio.com/v0" }
+        ]
+    }
+}
